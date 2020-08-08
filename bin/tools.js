@@ -30,8 +30,12 @@ module.exports = {
 
   // 判断路径是否存在
   isExistFileOrDir(dirName, componentName) {
-    const files = fs.readdirSync(dirName);
-    const isExist = files.indexOf(componentName) !== -1;
-    return isExist;
+    try {
+      const files = fs.readdirSync(dirName);
+      const isExist = files.indexOf(componentName) !== -1;
+      return isExist;
+    } catch (error) {
+      return false;
+    }
   },
 };

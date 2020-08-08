@@ -1,6 +1,6 @@
 {
   "name": "clhelper",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "全局命令小助手",
   "main": "index.js",
   "scripts": {
