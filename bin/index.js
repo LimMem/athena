@@ -60,7 +60,7 @@ const createComFile = async (componentName, pathname) => {
 
 /* 必选参数  alita框架名称 type组件/还是页面 */
 program
-  .version("1.0.5", "-v --version -V")
+  .version("1.0.6", "-v --version -V")
   .arguments("<command> <type> <componentName> [path]")
   .action(function (command, type, componentName, path) {
     obj.name = componentName;

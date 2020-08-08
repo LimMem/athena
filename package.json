@@ -1,6 +1,6 @@
 {
-  "name": "athena",
-  "version": "1.0.5",
+  "name": "clhelper",
+  "version": "1.0.6",
   "description": "全局命令小助手",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "components"
   ],
   "bin": {
-    "athreact": "lib/index.js"
+    "hreact": "lib/index.js"
   },
   "author": "qclong",
   "license": "ISC",
