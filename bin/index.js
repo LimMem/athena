@@ -60,12 +60,12 @@ const createComFile = async (componentName, pathname) => {
 
 /* 必选参数  alita框架名称 type组件/还是页面 */
 program
-  .version("1.0.6", "-v --version -V")
+  .version("1.0.8", "-v --version -V")
   .arguments("<command> <type> <componentName> [path]")
   .action(function (command, type, componentName, path) {
     obj.name = componentName;
     obj.path = path || "./";
-    if (command === "install") {
+    if (command === "add") {
       if (
         ["component", "components", "c", "com", "comp"].indexOf(type) !== -1
       ) {
@@ -76,10 +76,10 @@ program
     }
 
     console.error(color.red("命令号输入有误, 命令号暂时仅仅支持： "));
-    console.log(color.red("lim -v"));
+    console.log(color.red("creact -v"));
     console.log(
       color.red(
-        "lim <install> <c | com | comp | component | components> <name> [path]]"
+        "creact add <c | com | comp | component | components> <name> [path]]"
       )
     );
     process.exit();
